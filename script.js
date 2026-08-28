@@ -24,21 +24,21 @@ const products = {
     { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"}
   ],
   pastry: [
-    { id: "cheese50", name: "فطيرة", price: 50 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese80", name: "فطيرة", price: 80 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese100", name: "فطيرة", price: 100 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese130", name: "فطيرة", price: 130 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese150", name: "فطيرة", price: 150 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese160", name: "فطيرة", price: 160 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese180", name: "فطيرة", price: 180 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese200", name: "فطيرة", price: 200 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese250", name: "فطيرة", price: 250 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese300", name: "فطيرة", price: 300 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese380", name: "فطيرة", price: 380 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "cheese600", name: "فطيرة", price: 600 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "Sandwich100", name: "سندويش", price: 100 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "Sandwich150", name: "سندويش", price: 150 ,image:"https://placehold.co/600x480?text=Tea"},
-    { id: "Sandwich250", name: "سندويش", price: 250 ,image:"https://placehold.co/600x480?text=Tea"}
+    { id: "cheese50", name: "فطيرة", price: 50 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese80", name: "فطيرة", price: 80 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese100", name: "فطيرة", price: 100 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese130", name: "فطيرة", price: 130 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese150", name: "فطيرة", price: 150 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese160", name: "فطيرة", price: 160 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese180", name: "فطيرة", price: 180 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese200", name: "فطيرة", price: 200 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese250", name: "فطيرة", price: 250 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese300", name: "فطيرة", price: 300 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese380", name: "فطيرة", price: 380 ,image:"./assets/img/Pizza.jpg"},
+    { id: "cheese600", name: "فطيرة", price: 600 ,image:"./assets/img/Pizza.jpg"},
+    { id: "Sandwich100", name: "سندويش", price: 100 ,image:"./assets/img/Sandwich.jpg"},
+    { id: "Sandwich150", name: "سندويش", price: 150 ,image:"./assets/img/Sandwich.jpg"},
+    { id: "Sandwich250", name: "سندويش", price: 250 ,image:"./assets/img/Sandwich.jpg"}
   ]
 };
 
@@ -122,8 +122,8 @@ function loadState(){try{const x=localStorage.getItem(STORAGE_KEY);if(x)return J
 function saveState(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state))}
 function loadSales(){try{const x=localStorage.getItem(SALES_KEY);return x?JSON.parse(x):[]}catch(e){return[]}}
 function saveSales(){localStorage.setItem(SALES_KEY,JSON.stringify(sales))}
-function formatMoney(v){return `${Number(v).toLocaleString("ar-SY")} ل.س`}
-function formatDateTime(v){return new Date(v).toLocaleString("ar-SY",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}
+function formatMoney(v){return `${Number(v).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2})} ل.س`}
+function formatDateTime(v){return new Date(v).toLocaleString("en-US",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}
 function csvEscape(v){return `"${String(v??"").replace(/"/g,'""')}"`}
 function escapeHTML(v){return String(v??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}
 function escapeAttribute(v){return escapeHTML(v)}
