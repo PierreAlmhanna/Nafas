@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#496a50">
+<title>نظام طلبات الكافيه</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div><h1>كافيه نفس</h1><p>نظام إدارة الطلبات والطاولات</p></div>
+  <button id="salesBtn" class="btn secondary">سجل المبيعات</button>
+</header>
+
+<main class="container">
+<section id="tablesSection">
+  <div class="section-title"><h2>الطاولات</h2><span id="openTablesCount" class="badge">0 مفتوحة</span></div>
+  <div id="tablesGrid" class="tables-grid"></div>
+</section>
+
+<section id="orderSection" class="order-section hidden">
+  <div class="order-header">
+    <button id="backBtn" class="btn secondary">رجوع للطاولات</button>
+    <div><h2 id="selectedTableTitle">الطاولة</h2><p id="lastOrderTime">آخر طلب: لا يوجد</p></div>
+  </div>
+
+  <div class="customer-box">
+    <label for="customerName">اسم الشخص</label>
+    <input id="customerName" type="text" placeholder="اكتب اسم الشخص الجالس على الطاولة">
+  </div>
+
+  <div class="add-order-box">
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="cafe">منتجات الكافيه</button>
+      <button class="category-btn" data-category="pastry">الفطائر</button>
+    </div>
+    <div id="productsPanel">
+      <div class="products-heading">
+        <h3 id="productsTitle">منتجات الكافيه</h3>
+        <span>اضغط على المنتج لإضافته أو زيادة العدد</span>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </div>
+    <div id="customProductPanel" class="custom-product-panel hidden">
+      <h3 id="customTitle">إضافة منتج آخر</h3>
+      <div class="custom-form">
+        <input id="customName" type="text" placeholder="اسم المنتج">
+        <input id="customPrice" type="number" min="0" placeholder="السعر">
+        <button id="addCustomBtn" class="btn primary">إضافة</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-box">
+    <div class="cart-title"><h3>الطلبات الحالية</h3><span id="itemCount" class="badge">0 قطعة</span></div>
+    <div id="cartItems"></div>
+    <div class="total-row"><span>المجموع</span><strong id="grandTotal">0 ل.س</strong></div>
+    <button id="closeTableBtn" class="btn close-table">إغلاق الطاولة وتسجيل الفاتورة</button>
+  </div>
+</section>
+</main>
+
+<dialog id="salesDialog">
+  <div class="dialog-header"><h2>سجل المبيعات</h2><button id="closeDialogBtn" class="icon-btn">×</button></div>
+  <div class="sales-summary">
+    <div><span>عدد الفواتير</span><strong id="invoiceCount">0</strong></div>
+    <div><span>إجمالي المبيعات</span><strong id="salesTotal">0 ل.س</strong></div>
+  </div>
+  <div class="sales-actions">
+    <button id="exportBtn" class="btn primary">تصدير CSV</button>
+    <button id="clearSalesBtn" class="btn danger">حذف سجل المبيعات</button>
+  </div>
+  <div id="salesList" class="sales-list"></div>
+</dialog>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
