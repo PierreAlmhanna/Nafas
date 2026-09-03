@@ -4,8 +4,9 @@
 
 const products = {
   cafe: [
+    { id: "Pepsi", name: "كولا 330", price: 80, image:"./assets/img/Pepsi.jpg" },
+    { id: "7up", name: "كولا 250", price: 70, image:"./assets/img/7up.png" },
     { id: "Matte", name: "متة", price: 50, image:"./assets/img/matteh.png"},
-    { id: "Colla", name: "كولا", price: 80, image:"./assets/img/Colla.png" },
     { id: "HotChocolate", name: "هوت شوكليت", price: 60, image:"./assets/img/HotChocolate.png" },
     { id: "Arkela", name: "خدمة اركيلة", price: 50, image:"./assets/img/Arkela.png"},
     { id: "Indomi", name: "اندومي", price: 70 ,image:"./assets/img/Indomi.png"},
@@ -24,6 +25,7 @@ const products = {
     { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"}
   ],
   pastry: [
+    { id: "Falafel", name: "فلافل", price: 100 ,image:"./assets/img/Falafel.jpg"},
     { id: "cheese50", name: "محمرة", price: 50 ,image:"./assets/img/Mohammarah.webp"},
     { id: "cheese51", name: "زعتر", price: 50 ,image:"./assets/img/Zaatar.jpg"},
     { id: "cheese52", name: "محمرة وزعتر", price: 60 ,image:"./assets/img/Mohzat.webp"},
