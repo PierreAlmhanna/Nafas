@@ -1,21 +1,17 @@
-// ============================================================
-// إعدادات المنتجات - عدّل الأسماء والأسعار من هنا
-// ============================================================
-
 const products = {
   cafe: [
+    { id: "Service", name: "خدمة طاولة", price: 50 ,image:"./assets/img/service.png"},
+    { id: "Arkela", name: "خدمة اركيلة", price: 50, image:"./assets/img/Arkela.png"},
     { id: "Pepsi", name: "كولا 330", price: 80, image:"./assets/img/Pepsi.jpg" },
     { id: "7up", name: "كولا 250", price: 70, image:"./assets/img/7up.png" },
     { id: "Matte", name: "متة", price: 50, image:"./assets/img/matteh.png"},
     { id: "HotChocolate", name: "هوت شوكليت", price: 60, image:"./assets/img/HotChocolate.png" },
-    { id: "Arkela", name: "خدمة اركيلة", price: 50, image:"./assets/img/Arkela.png"},
     { id: "Indomi", name: "اندومي", price: 70 ,image:"./assets/img/Indomi.png"},
     { id: "Nescafe3*1", name: "3*1", price: 80 ,image:"./assets/img/Nescafe.jpg"},
     { id: "Water", name: "مياه", price: 40 ,image:"./assets/img/Water.png"},
     { id: "Mokarmeshat", name: "مقرمشات", price: 100 ,image:"./assets/img/Mokarmeshat.png"},
     { id: "Coffee", name: "قهوة حلوة", price: 100 ,image:"./assets/img/Coffee.png"},
-    { id: "Juice", name: "عصير طبيعي", price: 75 ,image:"./assets/img/Juice.png"},
-    { id: "Service", name: "خدمة طاولة", price: 50 ,image:"./assets/img/service.png"},
+    { id: "Juice", name: "عصير طبيعي", price: 80 ,image:"./assets/img/Juice.png"},
     { id: "Tea", name: "شاي", price: 50 ,image:"./assets/img/Tea.png"},
     { id: "New", name: "تجديد ابريق", price: 20 ,image:"./assets/img/New.png"},
     { id: "Energy", name: "طاقة", price: 150 ,image:"./assets/img/Energy.jpg"},
@@ -71,7 +67,8 @@ const salesDialog=document.getElementById("salesDialog"),salesList=document.getE
 
 init();
 function init(){
-renderTables();renderProducts();
+renderTables();
+renderProducts();
 document.getElementById("salesBtn").addEventListener("click",openSalesDialog);
 document.getElementById("closeDialogBtn").addEventListener("click",()=>salesDialog.close());
 document.getElementById("backBtn").addEventListener("click",showTables);
