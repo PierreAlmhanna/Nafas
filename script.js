@@ -23,6 +23,7 @@ const products = {
     { id: "kammonwlimon", name: "كمون وليمون", price: 50 ,image:"./assets/img/Kammonwlimon.jpg"},
     { id: "Zhorat", name: "زهورات", price: 50 ,image:"./assets/img/Zhorat.jpg"},
     { id: "Babonej", name: "بابونج", price: 50 ,image:"./assets/img/babonej.jpg"},
+
     { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"}
   ],
   pastry: [
