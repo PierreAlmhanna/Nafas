@@ -2,11 +2,14 @@ const products = {
   cafe: [
     { id: "Service", name: "خدمة طاولة", price: 50 ,image:"./assets/img/service.png"},
     { id: "Arkela", name: "خدمة اركيلة", price: 50, image:"./assets/img/Arkela.png"},
-    { id: "Pepsi", name: "كولا 330", price: 80, image:"./assets/img/Pepsi.jpg" },
-    { id: "7up", name: "كولا 250", price: 70, image:"./assets/img/7up.png" },
+    { id: "Pepsi1", name: "بيبسي", price: 80, image:"./assets/img/Pepsi.jpg" },
+    { id: "Mernda1", name: "ميرندا تفاح", price: 80, image:"./assets/img/mapple.jpg" },
+    { id: "Mernda2", name: "ميرندا برتقال", price: 80, image:"./assets/img/morang.jpg" },
+    { id: "7up", name: "7UP", price: 80, image:"./assets/img/7up.jpg" },
+    { id: "kenya250", name: "كينزا 250", price: 70, image:"./assets/img/Kenza250.jpg" },
     { id: "Matte", name: "متة", price: 50, image:"./assets/img/matteh.png"},
     { id: "HotChocolate", name: "هوت شوكليت", price: 60, image:"./assets/img/HotChocolate.png" },
-    { id: "Indomi", name: "اندومي", price: 70 ,image:"./assets/img/Indomi.png"},
+    { id: "Indomi", name: "اندومي", price: 80 ,image:"./assets/img/Indomi.png"},
     { id: "Nescafe3*1", name: "3*1", price: 80 ,image:"./assets/img/Nescafe.jpg"},
     { id: "Water", name: "مياه", price: 40 ,image:"./assets/img/Water.png"},
     { id: "Mokarmeshat", name: "مقرمشات", price: 100 ,image:"./assets/img/Mokarmeshat.png"},
@@ -14,10 +17,12 @@ const products = {
     { id: "Juice", name: "عصير طبيعي", price: 80 ,image:"./assets/img/Juice.png"},
     { id: "Tea", name: "شاي", price: 50 ,image:"./assets/img/Tea.png"},
     { id: "New", name: "تجديد ابريق", price: 20 ,image:"./assets/img/New.png"},
-    { id: "Energy", name: "طاقة", price: 150 ,image:"./assets/img/Energy.jpg"},
-    { id: "Fastcoffee", name: "كامبو سريعة", price: 50 ,image:"./assets/img/FastCoffee.jpg"},
+    { id: "Energy", name: "طاقة", price: 150 ,image:"./assets/img/Xxl.jpg"},
+    { id: "Fastcoffee", name: "كامبو سريعة", price: 60 ,image:"./assets/img/FastCoffee.jpg"},
     { id: "Icecoffee", name: "آيس كوفي", price: 120 ,image:"./assets/img/IceCoffee.png"},
     { id: "kammonwlimon", name: "كمون وليمون", price: 50 ,image:"./assets/img/Kammonwlimon.jpg"},
+    { id: "Zhorat", name: "زهورات", price: 50 ,image:"./assets/img/Zhorat.jpg"},
+    { id: "Babonej", name: "بابونج", price: 50 ,image:"./assets/img/babonej.jpg"},
     { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"}
   ],
   pastry: [
@@ -44,10 +49,10 @@ const products = {
     { id: "cheese69", name: "بيتزا لحومات", price: 300 ,image:"./assets/img/Pizza4season.jpeg"},
     { id: "Sandwich100", name: "بطاطا صغير", price: 100 ,image:"./assets/img/Botetto.webp"},
     { id: "Sandwich101", name: "بطاطا", price: 150 ,image:"./assets/img/Botetto.jpeg"},
-    { id: "Sandwich102", name: "فاهيتا", price: 250 ,image:"./assets/img/Sandwich.jpg"},
+    { id: "Sandwich102", name: "فاهيتا", price: 300 ,image:"./assets/img/Sandwich.jpg"},
     { id: "Sandwich103", name: "شاورما", price: 250 ,image:"./assets/img/Shawermeh.webp"},
-    { id: "Sandwich104", name: "مكسيكي", price: 250 ,image:"./assets/img/Sandwich.jpg"},
-    { id: "Sandwich105", name: "فرانشيسكو", price: 250 ,image:"./assets/img/Sandwich.jpg"},
+    { id: "Sandwich104", name: "مكسيكي", price: 300 ,image:"./assets/img/Sandwich.jpg"},
+    { id: "Sandwich105", name: "فرانشيسكو", price: 300 ,image:"./assets/img/Sandwich.jpg"},
     { id: "Sandwich106", name: "شيش طاووق", price: 250 ,image:"./assets/img/Sheesh.webp"}
 
   ]
