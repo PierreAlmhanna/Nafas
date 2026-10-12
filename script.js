@@ -6,15 +6,15 @@ const products = {
     { id: "Mernda1", name: "ميرندا تفاح", price: 80, image:"./assets/img/mapple.jpg" },
     { id: "Mernda2", name: "ميرندا برتقال", price: 80, image:"./assets/img/morang.jpg" },
     { id: "7up", name: "7UP", price: 80, image:"./assets/img/7up.jpg" },
-    { id: "kenya250", name: "كينزا 250", price: 70, image:"./assets/img/Kenza250.jpg" },
+    { id: "vodka", name: "فودكا", price: 200 ,image:"./assets/img/vodka.jpg"},
     { id: "Matte", name: "متة", price: 50, image:"./assets/img/matteh.png"},
-    { id: "HotChocolate", name: "هوت شوكليت", price: 60, image:"./assets/img/HotChocolate.png" },
+    { id: "HotChocolate", name: "هوت شوكليت", price: 80, image:"./assets/img/HotChocolate.png" },
     { id: "Indomi", name: "اندومي", price: 80 ,image:"./assets/img/Indomi.png"},
     { id: "Nescafe3*1", name: "3*1", price: 80 ,image:"./assets/img/Nescafe.jpg"},
     { id: "Water", name: "مياه", price: 40 ,image:"./assets/img/Water.png"},
     { id: "Mokarmeshat", name: "مقرمشات", price: 100 ,image:"./assets/img/Mokarmeshat.png"},
     { id: "Coffee", name: "قهوة حلوة", price: 100 ,image:"./assets/img/Coffee.png"},
-    { id: "Juice", name: "عصير طبيعي", price: 80 ,image:"./assets/img/Juice.png"},
+    { id: "Juice", name: "عصير طبيعي", price: 100 ,image:"./assets/img/Juice.png"},
     { id: "Tea", name: "شاي", price: 50 ,image:"./assets/img/Tea.png"},
     { id: "New", name: "تجديد ابريق", price: 20 ,image:"./assets/img/New.png"},
     { id: "Energy", name: "طاقة", price: 150 ,image:"./assets/img/Xxl.jpg"},
@@ -23,8 +23,8 @@ const products = {
     { id: "kammonwlimon", name: "كمون وليمون", price: 50 ,image:"./assets/img/Kammonwlimon.jpg"},
     { id: "Zhorat", name: "زهورات", price: 50 ,image:"./assets/img/Zhorat.jpg"},
     { id: "Babonej", name: "بابونج", price: 50 ,image:"./assets/img/babonej.jpg"},
-
-    { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"}
+    { id: "Rani", name: "راني", price: 100 ,image:"./assets/img/Rani.png"},
+    { id: "kenya250", name: "كينزا 250", price: 70, image:"./assets/img/Kenza250.jpg" }
   ],
   pastry: [
     { id: "Falafel", name: "فلافل", price: 100 ,image:"./assets/img/Falafel.jpg"},
